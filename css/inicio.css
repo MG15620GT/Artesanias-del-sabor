@@ -6,7 +6,7 @@
   align-items: center;  /* Centra la imagen */
   height: 100vh;
   padding: 0 5%;
-  background-color: #f3dbc3;
+  background-image: url("../imagenes/fondo-1.png");
   color: white;
   overflow: hidden;
 }
@@ -32,5 +32,6 @@
   object-fit: contain;
   margin-top: 8rem;
 }
+
 
 
