@@ -1,0 +1,44 @@
+.mensaje-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000; /* o usa rgba(0, 0, 0, 0.7) para semi-transparente */
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    font-style: italic;
+    z-index: 1001; /* Mayor que .menu para que esté encima */
+}
+
+/* Reubicamos el menú justo debajo del mensaje */
+.menu {
+    position: fixed;
+    top: 2.9rem;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.links li {
+    padding: 1rem;
+    list-style-type: none;
+}
+
+.links a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #000;
+    font-style: italic;
+}

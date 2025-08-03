@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Dancing_Script';
+  src: url('../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'lora';
+  src: url('../fonts/Lora/Lora-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+*{
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../imagenes/fondo.png);
+}
+.imagenes-productos{
+    height: 100%;
+}

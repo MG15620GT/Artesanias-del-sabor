@@ -1,0 +1,34 @@
+.Inicio {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  /* Centra la imagen */
+  height: 100vh;
+  padding: 0 5%;
+
+  color: white;
+  overflow: hidden;
+}
+
+/* Capa oscura */
+.Inicio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.Inicio > * {
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  height: 20rem;
+  object-fit: contain;
+  margin-top: 8rem;
+}
