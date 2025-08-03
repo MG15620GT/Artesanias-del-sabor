@@ -34,7 +34,6 @@
     height: 5.5rem;; 
     padding: 1rem;
     border-radius: 50%;
-    background-color: rgb(80, 39, 39);
 }
 
 
@@ -156,4 +155,5 @@ h2 {
 .item a{
     text-decoration: none;
     color: white;
+
 }
