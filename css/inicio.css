@@ -6,7 +6,7 @@
   align-items: center;  /* Centra la imagen */
   height: 100vh;
   padding: 0 5%;
-
+  background-color: #f3dbc3;
   color: white;
   overflow: hidden;
 }
@@ -32,3 +32,4 @@
   object-fit: contain;
   margin-top: 8rem;
 }
+
