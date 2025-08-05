@@ -157,3 +157,19 @@ h2 {
     color: white;
 
 }
+@media (max-width: 780px) {
+    .links-productos li {
+        width: 25%;
+        display: flex;           /* Cambia de inline-block a flex */
+        flex-direction: column;  /* Coloca elementos en columna */
+        align-items: center;     /* Centra imagen y texto horizontalmente */
+        text-align: center;
+    }
+    .links-productos li a {
+    margin-top: 0.5rem;      /* Separación entre imagen y texto */
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 0.7rem;
+}
+
