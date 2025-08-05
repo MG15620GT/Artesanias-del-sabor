@@ -22,3 +22,14 @@ footer{
 .mapa iframe{
     width: 100%;
 }
+@media (max-width: 768px) {
+  .texto{
+    dispaly:none;
+    .mapa{
+    width: 100%;
+}
+
+}
+  
+}
+
