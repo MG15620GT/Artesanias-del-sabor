@@ -25,12 +25,12 @@ footer{
 @media (max-width: 768px) {
   .texto{
     display: none;
-    .mapa{
+  }
+  .mapa{
     width: 100%;
-}
-
-}
+  }
   
 }
+
 
 
