@@ -172,4 +172,19 @@ h2 {
     font-style: italic;
     font-size: 0.7rem;
 }
+    .pan {
+    width: 100%;
+    margin: 1rem 1rem 1rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    background-image: url(../imagenes/fondo-panes.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+
 
