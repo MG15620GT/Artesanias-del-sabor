@@ -24,12 +24,12 @@ footer {
 /* Sección del mapa */
 .mapa {
   width: 60%;
-  height: 100%;
+  height: auto;
 }
 
 .mapa iframe {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 /* Responsive para móvil */
@@ -52,3 +52,4 @@ footer {
     height: 20rem;
   }
 }
+
