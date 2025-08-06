@@ -3,7 +3,7 @@ footer {
   width: 100%;
   display: flex;
   height: auto;
-  min-height: 40rem;
+  min-height: 35rem;
   background-color: #fff8f0; /* opcional para resaltar estilo artesanal */
   flex-wrap: wrap;
   justify-content: space-between;
@@ -13,7 +13,7 @@ footer {
 /* Sección de texto */
 .texto {
   width: 40%;
-  height: 40rem;
+  height: 35rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,7 +30,7 @@ footer {
 /* Sección del mapa */
 .mapa {
   width: 60%;
-  height: 40rem;
+  height: 35rem;
 }
 
 .mapa iframe {
@@ -59,4 +59,5 @@ footer {
     height: 20rem;
   }
 }
+
 
