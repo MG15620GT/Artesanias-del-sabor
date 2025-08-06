@@ -5,28 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/MVS.css">
     <title>Artesanias del sabor</title>
 </head>
 <body>
-    <div class="mensaje-1">
-        <p>Los mejores productos artesanales al mejor precio</p>
-    </div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <nav class="menu responsive-menu">
-        <ul class="links">
-            <li><a href="index">Inicio</a></li>
-            <li><a href="index#Productos">Productos</a></li>
-            <li><a href="empresa">Acerca de la empresa</a></li>
-            <li><a href="#Contacto">Contacto</a></li>
-            <li><a href="#Ubicacion">Ubicacion</a></li>
-        </ul>
-    </nav>
-    <script>
-        function toggleMenu() {
-            document.querySelector('.menu').classList.toggle('open');
-        }
-    </script>
-        <main>
+    <header>
+        <div class="mensaje-1">
+            <p>Los mejores productos artesanales al mejor precio</p>
+        </div>
+        <nav class="menu">
+            <ul class="links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#Productos">Productos</a></li>
+                <li><a href="Acerca de la empresa.php">Acerca de la empresa</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+                <li><a href="#Ubicacion">Ubicacion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
         <section class="MVA">
             <div class="MISION">
                 <div class="titulo">
@@ -58,7 +55,6 @@ Libertad: Nos gusta que nuestros clientes tengan tanto comodidad y que se sienta
             </div>
         </section>        
     </main>
-
     <footer id="Ubicacion">
         <div class="texto">
             <p>AV. SALVADOR NAVA MARTINEZ 11527, TANGAMANGA SLP.</p>
@@ -69,8 +65,4 @@ Libertad: Nos gusta que nuestros clientes tengan tanto comodidad y que se sienta
     </footer>
 
 </body>
-
 </html>
-
-
-
