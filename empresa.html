@@ -9,20 +9,24 @@
     <title>Artesanias del sabor</title>
 </head>
 <body>
-    <header>
-        <div class="mensaje-1">
-            <p>Los mejores productos artesanales al mejor precio</p>
-        </div>
-        <nav class="menu">
-            <ul class="links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#Productos">Productos</a></li>
-                <li><a href="Acerca de la empresa.php">Acerca de la empresa</a></li>
-                <li><a href="#Contacto">Contacto</a></li>
-                <li><a href="#Ubicacion">Ubicacion</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="mensaje-1">
+        <p>Los mejores productos artesanales al mejor precio</p>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav class="menu responsive-menu">
+        <ul class="links">
+            <li><a href="index">Inicio</a></li>
+            <li><a href="index#Productos">Productos</a></li>
+            <li><a href="empresa">Acerca de la empresa</a></li>
+            <li><a href="#Contacto">Contacto</a></li>
+            <li><a href="#Ubicacion">Ubicacion</a></li>
+        </ul>
+    </nav>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.menu').classList.toggle('open');
+        }
+    </script>
     <main>
         <section class="MVA">
             <div class="MISION">
@@ -66,3 +70,4 @@ Libertad: Nos gusta que nuestros clientes tengan tanto comodidad y que se sienta
 
 </body>
 </html>
+
