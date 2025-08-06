@@ -1,44 +1,54 @@
-footer{
+footer {
   padding-top: 4rem;
   width: 100%;
   display: flex;
   height: auto;
+  min-height: 20rem; /* altura mínima relativa */
 }
-.texto{
-    width: 40%;
-  height:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    font-family: 'Dancing_Script';
-    text-align: center;
-    color: rgb(56, 21, 21);
-    text-shadow: 1px 1px 3px black;
-    background-color: white;
 
+/* Sección de texto */
+.texto {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-family: 'Dancing_Script';
+  text-align: center;
+  color: rgb(56, 21, 21);
+  text-shadow: 0.1rem 0.1rem 0.3rem black;
+  background-color: white;
 }
-.mapa{
-    width: 60%;
-    height: 100%;
+
+/* Sección del mapa */
+.mapa {
+  width: 60%;
+  height: 100%;
 }
-.mapa iframe{
-    width: 100%;
+
+.mapa iframe {
+  width: 100%;
+  height: 100%;
 }
-@media (max-width: 768px) {
-  .texto{
+
+/* Responsive para móvil */
+@media (max-width: 48rem) {
+  footer {
+    flex-direction: column;
+    min-height: 20rem;
+  }
+
+  .texto {
     display: none;
   }
-  .mapa{
+
+  .mapa {
     width: 100%;
+    height: 100%;
   }
-  
+
+  .mapa iframe {
+    height: 20rem;
+  }
 }
-
-
-
-
-
-
-
-
