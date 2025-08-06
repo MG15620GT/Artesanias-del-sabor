@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'Dancing_Script';
+  src: url('../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'lora';
+  src: url('../fonts/Lora/Lora-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+*{
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.producto-pan {
+    width: 100%;
+    margin-top: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    border-radius: 1rem;
+    gap: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.contenedor-imagenes {
+    width: 30%;
+    height: auto;
+    padding-right: 1rem;
+    box-sizing: border-box;
+}
+
+.contenedor-imagenes img {
+    width: 100%;
+    aspect-ratio: 100%; /* o 16 / 9 según tu diseño */
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.imagenes-pequenas{
+    width: 100%;
+    aspect-ratio: 100%; /* o 16 / 9 según tu diseño */
+    display: flex;
+}
+.imagenes-pequenas img{
+    width: 16.666%;  
+    height: 14vh;
+    padding: 0.15rem;
+}
+.imagenes-pequenas img:hover{
+    transform: scale(1.03);
+}
+
+.descripciones {
+    width: 65%;
+    height: auto;
+    background-color: #fffefc;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.descripciones:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.descripciones h1 {
+    font-family: 'Dancing_Script';
+    font-size: 3rem;
+    text-align: center;
+    color: #3c2c1c;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.textos {
+    font-style: italic;
+    font-size: 1.2rem;
+    text-align: justify;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.costos {
+    color: #267a03;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+body{
+    background-color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 1080px) {
+    .producto-pan {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contenedor-imagenes, .descripciones {
+        width: 100%;
+        height: auto;
+    }
+    .imagen-grande{
+        width: 100%;
+        height: auto;
+    }
+
+    .contenedor-imagenes {
+        padding-right: 0;
+    }
+}
