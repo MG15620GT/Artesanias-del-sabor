@@ -32,7 +32,6 @@
 .links-productos img{
     width: 5.5rem;  
     height: 5.5rem;; 
-    padding: 1rem;
     border-radius: 50%;
 }
 
@@ -229,6 +228,7 @@ h2 {
     margin-top: 1rem;
 }
 }
+
 
 
 
