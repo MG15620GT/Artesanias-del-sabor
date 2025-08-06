@@ -3,7 +3,11 @@ footer {
   width: 100%;
   display: flex;
   height: auto;
-  min-height: 40rem; /* altura mínima relativa */
+  min-height: 40rem;
+  background-color: #fff8f0; /* opcional para resaltar estilo artesanal */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Sección de texto */
@@ -11,14 +15,24 @@ footer {
   width: 40%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 3rem;
-  font-family: 'Dancing_Script';
+  font-family: 'Dancing_Script', cursive;
   text-align: center;
   color: rgb(56, 21, 21);
   text-shadow: 0.1rem 0.1rem 0.3rem black;
   background-color: white;
+  padding: 2rem;
+}
+
+/* Íconos de misión, visión, valores */
+.icono-footer {
+  height: 8rem;
+  width: auto;
+  object-fit: contain;
+  margin: 1rem;
 }
 
 /* Sección del mapa */
@@ -30,6 +44,7 @@ footer {
 .mapa iframe {
   width: 100%;
   height: 100%;
+  border: none;
 }
 
 /* Responsive para móvil */
@@ -51,7 +66,8 @@ footer {
   .mapa iframe {
     height: 20rem;
   }
+
+  .icono-footer {
+    height: 6rem;
+  }
 }
-
-
-
