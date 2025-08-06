@@ -2,6 +2,7 @@ footer{
   padding-top: 4rem;
   width: 100%;
   display: flex;
+  heigth: auto;
 }
 .texto{
     width: 40%;
@@ -32,6 +33,7 @@ footer{
   }
   
 }
+
 
 
 
