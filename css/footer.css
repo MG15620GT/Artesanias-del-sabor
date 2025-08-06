@@ -59,5 +59,38 @@ footer {
     height: 20rem;
   }
 }
+.redes-sociales {
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+
+.redes-sociales a {
+  color: #fff;
+  font-size: 2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.redes-sociales a:hover {
+  color: #ffe4c4; /* Color pastel claro al pasar el mouse */
+  transform: scale(1.2);
+}
+
+/* Responsive: íconos más pequeños en móvil */
+@media (max-width: 48rem) {
+  .redes-sociales {
+    padding: 1rem 0;
+    gap: 1.5rem;
+  }
+
+  .redes-sociales a {
+    font-size: 1.5rem;
+  }
+}
+
 
 
