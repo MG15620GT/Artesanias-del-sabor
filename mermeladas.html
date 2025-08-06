@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/mermeladas.css">
+    <title>Artesanias del sabor</title>
+</head>
+<body>
+    <header>
+        <div class="mensaje-1">
+            <p>Los mejores productos artesanales al mejor precio</p>
+        </div>
+        <nav class="menu">
+            <ul class="links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#Productos">Productos</a></li>
+                <li><a href="Acerca de la empresa.php">Acerca de la empresa</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+                <li><a href="#Ubicacion">Ubicacion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="producto-pan">
+  <div class="contenedor-imagenes">
+    <img id="imagen-grande" src="imagenes/mermelada-fresa.png" alt="fresa">
+    
+    <div class="imagenes-pequenas">
+      <img src="imagenes/mermelada-fresa.png"
+           data-img="imagenes/mermelada-fresa.png"
+           data-titulo="Dulce tentación 250ml"
+           data-descripcion="Dulce tentación de fresa. Elaborada con fresas frescas seleccionadas a mano, esta mermelada artesanal captura el sabor vibrante y ligeramente ácido del fruto rojo."
+           data-precio="$180"
+           alt="dulce-entación">
+           
+      <img src="imagenes/mango.png"
+           data-img="imagenes/mango.png"
+           data-titulo="Dulce amanecer 250ml"
+           data-descripcion="Dulce amanecer de mango. Con el dulzor tropical del mango maduro y una textura suave que acaricia el paladar, esta mermelada artesanal es una verdadera joya del trópico."
+           data-precio="$180"
+           alt="Dulce-amanecer">
+      
+      <img src="imagenes/arandano.png"
+           data-img="imagenes/arandano.png"
+           data-titulo="Azul silvestre 250ml"
+           data-descripcion="Azul silvestre de arándano. Elaborada con arándanos frescos y cocida lentamente para conservar su sabor intenso y ligeramente ácido, esta mermelada artesanal ofrece una textura suave con notas silvestres."
+           data-precio="$180"
+           alt="Azul-silvestre">
+
+        <img src="imagenes/durazno.png"
+           data-img="imagenes/durazno.png"
+           data-titulo="Dulce de oro 250ml"
+           data-descripcion="Dulce de oro de durazno. Con duraznos maduros seleccionados a mano, esta mermelada artesanal captura la dulzura natural y la suavidad de la fruta."
+           data-precio="$180"
+           alt="Dulce-de-oro">
+    
+        <img src="imagenes/higo.png"
+           data-img="imagenes/higo.png"
+           data-titulo="Dulce delirio"
+           data-descripcion="Dulce delirio de higo. Con higos maduros cocidos lentamente, esta mermelada artesanal ofrece una textura rica y un dulzor profundo con notas terrosas."
+           data-precio=""
+           alt="">
+
+        <img src="imagenes/kit.png"
+           data-img="imagenes/kit.png"
+           data-titulo="Kit dulce selección"
+           data-descripcion=""
+           data-precio=""
+           alt="kit-dulce">
+
+      <!-- Puedes añadir más imágenes como estas -->
+    </div>
+  </div>
+
+  <div class="descripciones">
+    <h1 id="titulo">Mermelada dulce tentación 250ml</h1>
+    <p id="descripcion" class="textos">Dulce tentación de fresa. Elaborada con fresas frescas seleccionadas a mano, esta mermelada artesanal captura el sabor vibrante y ligeramente ácido del fruto rojo.</p>
+    <p id="precio" class="costos">$180</p>
+  </div>
+</section>
+    
+    </main>
+    <footer id="Ubicacion">
+        <div class="texto">
+            <p>AV. SALVADOR NAVA MARTINEZ 11527, TANGAMANGA SLP.</p>
+        </div>     
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.8668328966764!2d-100.969937525819!3d22.131052479808538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa212c2328603%3A0x9edc2f11be108df0!2sAv.%20Salvador%20Nava%20Mart%C3%ADnez%2011527%2C%20Revoluci%C3%B3n%2C%2078350%20San%20Luis%20Potos%C3%AD%2C%20S.L.P.!5e0!3m2!1ses-419!2smx!4v1753908899669!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>   
+    </footer>
+<script>
+  // Obtener elementos principales
+  const imagenGrande = document.getElementById('imagen-grande');
+  const titulo = document.getElementById('titulo');
+  const descripcion = document.getElementById('descripcion');
+  const precio = document.getElementById('precio');
+
+  // Obtener todas las imágenes pequeñas
+  const imagenesPequenas = document.querySelectorAll('.imagenes-pequenas img');
+
+  // Agregar evento click a cada imagen pequeña
+  imagenesPequenas.forEach(img => {
+    img.addEventListener('click', () => {
+      imagenGrande.src = img.dataset.img;
+      titulo.textContent = img.dataset.titulo;
+      descripcion.textContent = img.dataset.descripcion;
+      precio.textContent = img.dataset.precio;
+    });
+  });
+</script>
+
+</body>
+</html>
